@@ -1,0 +1,265 @@
+
+html {
+    height: 100%;
+    width: 100%;
+} 
+
+.wrapper {
+    min-width: 1060px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    height: 145px;
+    align-items: center;  
+}
+
+p {
+    line-height: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+nav {
+    width: 40%;
+    padding: 3rem 10rem 3rem 0rem;
+}
+
+.currentPage {
+    border-bottom: solid 2px orangered;
+}
+
+.border {
+    border: solid 3px orangered;
+    padding: 1rem 2rem;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    width: 50%;
+    padding: 3rem 0rem 3rem 6rem;
+    font-size: 2.50rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(201, 201, 201);
+    height: 50px;
+    width: 100%;
+}
+
+.orangered {
+    color: orangered;
+}
+
+.middle {
+    width: 100%;
+    min-height: calc(100vh - 195px);
+}
+
+
+/* oude css van website, als dit geen effect heeft mag dit weg ---------------------------*/
+
+
+/* homepage -------------------------------------------------------
+
+.boven {
+    width: calc(100% - 8rem);
+    display: flex;
+    justify-content: space-around;
+    padding: 0rem 4rem;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+
+.homepageFoto {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    float: right;
+    padding: 0rem 2rem;
+}
+
+.onder {
+    margin: 2rem 4rem;
+    width: 50%;
+}
+
+.flex1>h2 {
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+/* about me page ---------------------------
+
+.aboutFoto {
+    width: 30%;
+    height: auto;
+    padding: 0rem 0rem 3rem 3rem;
+    float: right;
+}
+
+.about>p {
+    padding: 0rem 3rem 1rem 0rem;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.about {
+    padding: 0rem 4rem 0rem 4rem;
+    width: calc(100% - 8rem);
+}
+
+/* Project page-----------------------------------
+
+.poster {
+    width: calc(100% - 10rem);
+    margin: 0rem 5rem 5rem 5rem;
+    background-color: #cb6ce6;
+    display: flex;
+    flex-direction: column;
+}
+
+.ProjectFoto {
+    width: 25%;
+    height: auto;
+}
+
+.ProjectText {
+    width: 40%;
+}
+
+.ProjectText>h2 {
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+.smss {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 0rem 1rem 0rem;
+    background-color: #8c52ff;
+}
+
+.FileLogo {
+    width: 15%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.smss>h2 {
+    width: 60%;
+    font-size: 3rem;
+}
+
+.doel {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 0rem;
+}
+
+.discordbot {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 0rem;
+}
+
+.website {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 0rem 5rem 0rem;
+}
+
+
+/*---slideshow---
+
+.slideshow {
+    display: flex;
+    justify-content: center;
+    margin: 0rem 0rem 2rem 0rem;
+    align-items: center;
+    width: calc(100% - 10rem);
+    align-self: center;
+    border: solid 5px #8c52ff;
+    background-color: #8c52ff;
+    
+}
+
+#fotoSlideshow {
+    width: calc(100% - 10rem);
+    height: 400px;
+    object-fit: contain;
+}
+
+.pijltje {
+    height: 48px;
+    font-size: 48px;
+    background-color: #a759bd;
+    margin: 0rem 2rem;
+}
+
+.pijltje:hover {
+    background: #6f3280;
+    cursor: pointer;
+}
+/* contactpage---------------------------------------
+
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+}
+
+input {
+    display: inline-block;
+}
+
+label {
+    vertical-align: top;
+}
+
+form>p {
+    padding: 1rem 0rem 0rem 0rem;
+}
+/* ---------------------------------------------------*/
