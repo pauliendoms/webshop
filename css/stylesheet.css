@@ -79,7 +79,41 @@ footer {
     min-height: calc(100vh - 195px);
 }
 
+/* index page -----------------------------------------------------------------------------*/
 
+.banner {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    height: 12rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.banner_foto {
+    width: 100%;
+    object-fit: cover;
+    height: 40%;
+    z-index: -1;
+    position: absolute;
+}
+
+.banner_text {
+    color: white;
+    top: -11rem;
+    left: 2rem;
+    width: 20%;
+}
+
+.banner_button {
+    background-color: orangered;
+    top: -3rem;
+    width: 20%;
+    padding: 1rem 0rem;
+    color: white;
+}
 /* oude css van website, als dit geen effect heeft mag dit weg ---------------------------*/
 
 

@@ -21,7 +21,14 @@ $_SESSION["currentPage"] = "index";
     <?php
         require "header.php";
     ?>
-    <p>thuis pagina</p>
+    <div class="banner">
+        <img src="assets/G0081100.jpg" alt="Banner Foto" class="banner_foto">
+        <p class="banner_text">Never stop doing what you love.</p>
+        <p class="banner_button">SHOP NOW</p>
+    </div>
+    <div class="highlighted">
+        <p>Take a look at our highlighted items</p>
+    </div>
 </div>
 </body>
 </html>
