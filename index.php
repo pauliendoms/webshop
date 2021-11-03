@@ -14,7 +14,8 @@ $_SESSION["currentPage"] = "index";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/stylesheet.css" rel="stylesheet">
-    <title>Webshop</title>
+    <link href="assets/favicon.ico" rel="icon">
+    <title>SJOV</title>
 </head>
 <body>
 <div class="wrapper">
@@ -22,7 +23,6 @@ $_SESSION["currentPage"] = "index";
         require "header.php";
     ?>
     <div class="banner">
-        <!--<img src="assets/G0081100.jpg" alt="Banner Foto" class="banner_foto">-->
         <p class="banner_text">Never stop doing what you love.</p>
         <p class="banner_button"><a href="shop.php">SHOP NOW</a></p>
     </div>

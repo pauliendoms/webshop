@@ -13,7 +13,8 @@ $_SESSION["currentPage"] = "shop";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/stylesheet.css" rel="stylesheet">
-    <title>Webshop</title>
+    <link href="assets/favicon.ico" rel="icon">
+    <title>SJOV</title>
 </head>
 <body>
 <div class="wrapper">
