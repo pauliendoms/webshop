@@ -3,6 +3,8 @@
 session_start();
 $_SESSION["currentPage"] = "shop";
 
+require "db/db.php";
+
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +24,21 @@ $_SESSION["currentPage"] = "shop";
         require "header.php";
     ?>
     <p>Winkel winkel winkel</p>
+    <div class="products">
+    <?php
+        $query = "SELECT * FROM Products WHERE Products.status = 1;";
+        $result = mysqli_query($con, $query);
+
+        while($product = mysqli_fetch_array($result)) {
+            echo("
+                <div class=\"product_card\">
+                    <img src=\"{$product['photoPath']}\" alt=\"{$product['productName']}\">
+                    <p>{$product['productName']}</p>
+                </div>
+            ");
+        }
+    ?>
+    <div>
 </div>
 </body>
 </html>

@@ -121,6 +121,29 @@ nav>ul>li:hover{
     background-color: rgb(250, 140, 100);
 }
 
+.highlighted {
+    display: flex;
+}
+
+/* Product Card --------------------------------------------------*/
+
+.product_card>img {
+    width: 15rem;
+    object-fit: cover;
+}
+
+.product_card {
+    box-shadow: 5px 5px 10px gray;
+    padding: 1rem;
+    margin: 3rem;
+    border-radius: 5px;
+}
+
+/* Shop page ----------------------------------------------------------*/
+
+.products {
+    display: flex;
+}
 
 /* oude css van website, als dit geen effect heeft mag dit weg ---------------------------*/
 

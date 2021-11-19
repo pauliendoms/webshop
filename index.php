@@ -3,6 +3,7 @@
 session_start();
 $_SESSION["currentPage"] = "index";
 
+require "db/db.php";
 
 ?>
 
@@ -28,6 +29,21 @@ $_SESSION["currentPage"] = "index";
     </div>
     <div class="highlighted">
         <p>Take a look at our highlighted items</p>
+        <?php
+            $query = "SELECT * FROM Products WHERE Products.status = 1;";
+            $result = mysqli_query($con, $query);
+
+            while($product = mysqli_fetch_array($result)) {
+                if($product['highlight'] == 1) {
+                    echo("
+                        <div class=\"product_card\">
+                            <img src=\"{$product['photoPath']}\" alt=\"{$product['productName']}\">
+                            <p>{$product['productName']}</p>
+                        </div>
+                    ");
+                }
+            }
+        ?>
     </div>
 </div>
 </body>
